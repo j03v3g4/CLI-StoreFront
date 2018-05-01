@@ -87,7 +87,7 @@ function addInventory() {
                         "UPDATE products SET ? WHERE ?",
                         [
                             {
-                                stock_quantity: (stock_quantity + answer.addInventory)
+                                stock_quantity: chosenItem.stock_quantity + answer.addInventory
                             },
                             {
                                 id: chosenItem.id
